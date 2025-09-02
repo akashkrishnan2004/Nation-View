@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Nunito_Sans";
+    src: url('./components/Font/Ubuntu-Regular.ttf');
+}
+* {
+  font-family: "Nunito_Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

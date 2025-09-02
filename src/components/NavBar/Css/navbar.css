@@ -1,0 +1,64 @@
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.432), 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.nav1 h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav1 button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: hsl(207, 26%, 17%);
+  color: rgb(255, 248, 248);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.nav1 button:hover {
+  background-color: #555;
+  color: #faf7f7;
+}
+
+/* Light mode (default) */
+body {
+  background-color: hsla(0, 0%, 96%, 1);
+  color: black;
+}
+
+.nav1 {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+
+body.dark-mode .nav1 {
+  background-color: hsl(209, 23%, 22%);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode .nav2,
+body.dark-mode .data,
+/* body.dark-mode .card, */
+body.dark-mode .countryDetailsContainer
+/* body.dark-mode .rightItems */
+{
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
