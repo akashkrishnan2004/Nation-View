@@ -56,10 +56,15 @@ body.dark-mode input,
 body.dark-mode select,
 body.dark-mode .nav2,
 body.dark-mode .data,
-/* body.dark-mode .card, */
 body.dark-mode .countryDetailsContainer
-/* body.dark-mode .rightItems */
 {
   background-color: hsl(209, 23%, 22%);
   color: white;
+}
+
+
+@media (max-width: 768px) {
+  .nav1 h2 {
+    font-size: 1rem;
+  }
 }
