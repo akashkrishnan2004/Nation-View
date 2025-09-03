@@ -12,6 +12,7 @@
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.432), 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  margin: 15px;
 }
 
 .nav2 .SearchBar {
@@ -21,7 +22,9 @@
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px, rgba(0, 0, 0, 0.1) 0px -4px 12px;
   outline: none;
+  padding-left: 10px;
 }
+
 .nav2 select {
   height: 2.5rem;
   width: 10%;
