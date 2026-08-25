@@ -15,11 +15,15 @@
 }
 
 .nav1 button {
-  padding: 0.5rem 1rem;
+  height: 50px;
+  width: 50px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: hsl(207, 26%, 17%);
   color: rgb(255, 248, 248);
-  border-radius: 50px;
+  border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -52,8 +56,8 @@ body.dark-mode .nav1 {
   background-color: hsl(209, 23%, 22%);
 }
 
-body.dark-mode input,
-body.dark-mode select,
+/* body.dark-mode input, */
+/* body.dark-mode select, */
 body.dark-mode .nav2,
 body.dark-mode .data,
 body.dark-mode .countryDetailsContainer
@@ -62,6 +66,10 @@ body.dark-mode .countryDetailsContainer
   color: white;
 }
 
+/* body.dark-mode input, 
+body.dark-mode select {
+  background-color: hsl(209, 23%, 22%);
+} */
 
 @media (max-width: 768px) {
   .nav1 h2 {
