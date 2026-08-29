@@ -1,25 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./components/home/home";
-import CountryDetails from "./components/countryDetails/countryDetails";
-import NavBar from "./components/NavBar/navbar";
-import Footer from "./components/Footer/footer";
 
-import "./App.css";
+import NavBar from "./components/navbar";
+import Home from "./pages/home";
+import CountryDetails from "./pages/countryDetails";
+import Footer from "./components/footer";
 
 export default function AppRoute() {
   return (
     <BrowserRouter>
-      <div className="appRoute">
-
+      <div className="flex min-h-screen flex-col bg-slate-50 dark:bg-slate-950">
         <NavBar />
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/country/:id" element={<CountryDetails />} />
-        </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+
+            <Route path="/country/:id" element={<CountryDetails />} />
+          </Routes>
+        </main>
 
         <Footer />
-        
       </div>
     </BrowserRouter>
   );
