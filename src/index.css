@@ -6,3 +6,7 @@
     font-family: "Nunito_Sans";
     src: url('./components/Font/Ubuntu-Regular.ttf');
 }
+
+/* * {
+  scrollbar-width: none;
+} */
